@@ -3,7 +3,7 @@ import rospy
 from std_msgs.msg import Int32
 
 class NodeA:
-
+    
     def __init__(self, k=1, n=4):
         rospy.init_node('nodeA', anonymous=False)
         self.pub = rospy.Publisher('/jut', Int32, queue_size=10)
